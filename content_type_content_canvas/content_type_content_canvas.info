@@ -1,0 +1,15 @@
+name = Content Type -- Content Canvas
+description = Defines the'content canvas' page
+core = 7.x
+package = Content Types
+version = 7.x-1.0
+project = content_type_content_canvas
+dependencies[] = content_type_project
+dependencies[] = content_types_news
+dependencies[] = features
+dependencies[] = node_reference
+dependencies[] = text
+features[features_api][] = api:2
+features[field_instance][] = node-content_canvas-body
+features[field_instance][] = node-content_canvas-field_project
+features[node][] = content_canvas

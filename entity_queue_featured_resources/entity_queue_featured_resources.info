@@ -1,0 +1,14 @@
+name = Entity Queue -- Featured Resources
+description = Defines a 'featured resources' entity queue and view
+core = 7.x
+package = Entity Queues
+version = 7.x-1.0
+project = entity_queue_featured_resources
+dependencies[] = entityqueue
+features[ctools][] = entityqueue:entityqueue_default:1
+features[ctools][] = views:views_default:3.0
+features[entityqueue_queue][] = featured_resources
+features[features_api][] = api:2
+features[views_view][] = featured_resources
+features_exclude[dependencies][entity] = entity
+features_exclude[dependencies][views] = views

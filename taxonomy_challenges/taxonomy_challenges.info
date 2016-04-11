@@ -1,0 +1,10 @@
+name = Taxonomy -- Challenges
+description = Defines the 'Climate Change Challenges Addressed' taxonomy
+core = 7.x
+package = Taxonomy
+version = 7.x-1.0
+project = taxonomy_challenges
+dependencies[] = features
+dependencies[] = taxonomy
+features[features_api][] = api:2
+features[taxonomy][] = climate_hazards

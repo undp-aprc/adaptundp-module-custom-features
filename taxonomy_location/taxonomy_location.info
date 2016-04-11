@@ -1,0 +1,10 @@
+name = Taxonomy -- Location
+description = Defines a 'location' taxonomy
+core = 7.x
+package = Taxonomy
+version = 7.x-1.0
+project = taxonomy_location
+dependencies[] = features
+dependencies[] = taxonomy
+features[features_api][] = api:2
+features[taxonomy][] = location

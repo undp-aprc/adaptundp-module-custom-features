@@ -1,0 +1,10 @@
+name = Taxonomy -- Level of Intervention
+description = Defines the 'Level of intervention' taxonomy
+core = 7.x
+package = Taxonomy
+version = 7.x-1.0
+project = taxonomy_level_of_intervention
+dependencies[] = features
+dependencies[] = taxonomy
+features[features_api][] = api:2
+features[taxonomy][] = level_of_intervention

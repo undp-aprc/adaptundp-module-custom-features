@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the NAP GSP Subsite feature.
+ */
+
+include_once 'nap_gsp_subsite.features.inc';

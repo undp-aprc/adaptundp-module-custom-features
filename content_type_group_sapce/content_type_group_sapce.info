@@ -1,0 +1,9 @@
+name = Content Type -- Group Space
+description = Defines the 'Group Space' content type.
+core = 7.x
+package = Content Types
+version = 7.x-1.0
+project = content_type_group_sapce
+dependencies[] = features
+features[features_api][] = api:2
+features[node][] = group_spaces

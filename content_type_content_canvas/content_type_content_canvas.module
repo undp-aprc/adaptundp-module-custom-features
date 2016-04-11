@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Content Type -- Content Canvas feature.
+ */
+
+include_once 'content_type_content_canvas.features.inc';

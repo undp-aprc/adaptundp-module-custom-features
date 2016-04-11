@@ -1,0 +1,14 @@
+name = Text Formats
+description = Defines the text formats used throughout the site.
+core = 7.x
+package = Global
+version = 7.x-1.0
+project = text_formats
+dependencies[] = features
+dependencies[] = filter
+dependencies[] = video_filter
+features[features_api][] = api:2
+features[filter][] = filtered_html
+features[filter][] = full_html
+features[filter][] = full_html_no_formatting
+features[filter][] = plain_text

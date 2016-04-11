@@ -1,0 +1,10 @@
+name = Taxonomy -- Project Status
+description = Defines a project status taxonomy
+core = 7.x
+package = Taxonomy
+version = 7.x-1.0
+project = taxonomy_project_status
+dependencies[] = features
+dependencies[] = taxonomy
+features[features_api][] = api:2
+features[taxonomy][] = project_status

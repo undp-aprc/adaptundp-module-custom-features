@@ -1,0 +1,16 @@
+name = Taxonomy -- Signature Programs
+description = Defines the signature program taxonomy
+core = 7.x
+package = Taxonomy
+version = 7.x-1.0
+project = taxonomy_signature_programs
+dependencies[] = features
+dependencies[] = image
+dependencies[] = taxonomy
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = field_program_preview_img
+features[field_base][] = field_summary
+features[field_instance][] = taxonomy_term-signature_programmes-field_program_preview_img
+features[field_instance][] = taxonomy_term-signature_programmes-field_summary
+features[taxonomy][] = signature_programmes

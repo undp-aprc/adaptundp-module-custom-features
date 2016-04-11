@@ -1,0 +1,10 @@
+name = Taxonomy -- Key Collaborators
+description = Defines the key collaborators taxonomy term
+core = 7.x
+package = Taxonomy
+version = 7.x-1.0
+project = taxonomy_key_collaborators
+dependencies[] = features
+dependencies[] = taxonomy
+features[features_api][] = api:2
+features[taxonomy][] = key_collaborators
