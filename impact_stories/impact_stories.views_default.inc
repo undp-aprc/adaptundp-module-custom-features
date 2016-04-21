@@ -152,7 +152,7 @@ function impact_stories_views_default_views() {
       'filter_rewrite_values' => NULL,
     ),
     'field_impact_theme_target_id' => array(
-      'bef_format' => 'default',
+      'bef_format' => 'bef',
       'more_options' => array(
         'bef_select_all_none' => 0,
         'bef_collapsible' => 0,
@@ -222,6 +222,7 @@ function impact_stories_views_default_views() {
   $handler->display->display_options['style_options']['zoom']['initialZoom'] = '3';
   $handler->display->display_options['style_options']['zoom']['minZoom'] = '3';
   $handler->display->display_options['style_options']['zoom']['maxZoom'] = '14';
+  $handler->display->display_options['style_options']['zoom']['scrollWheelZoom'] = 0;
   $handler->display->display_options['style_options']['icon']['iconType'] = 'html';
   $handler->display->display_options['style_options']['icon']['iconSize']['x'] = '100';
   $handler->display->display_options['style_options']['icon']['iconSize']['y'] = '100';
@@ -292,6 +293,7 @@ function impact_stories_views_default_views() {
   $handler->display->display_options['filters']['field_impact_theme_target_id']['expose']['label'] = 'Thematic Area';
   $handler->display->display_options['filters']['field_impact_theme_target_id']['expose']['operator'] = 'field_impact_theme_target_id_op';
   $handler->display->display_options['filters']['field_impact_theme_target_id']['expose']['identifier'] = 'field_impact_theme_target_id';
+  $handler->display->display_options['filters']['field_impact_theme_target_id']['expose']['remember'] = TRUE;
   $handler->display->display_options['filters']['field_impact_theme_target_id']['expose']['multiple'] = TRUE;
   $handler->display->display_options['filters']['field_impact_theme_target_id']['expose']['remember_roles'] = array(
     2 => '2',

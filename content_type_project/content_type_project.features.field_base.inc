@@ -234,7 +234,7 @@ function content_type_project_field_default_field_bases() {
   // Exported field_base: 'field_featured_video'
   $field_bases['field_featured_video'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => 4,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_featured_video',
@@ -247,11 +247,20 @@ function content_type_project_field_default_field_bases() {
     'module' => 'node_reference',
     'settings' => array(
       'referenceable_types' => array(
+        'carousel' => 0,
+        'content_canvas' => 0,
+        'event' => 0,
+        'group_spaces' => 0,
+        'impact' => 0,
+        'internal_documentation' => 0,
+        'news' => 0,
         'page' => 0,
         'partner' => 0,
         'project' => 0,
+        'project_showcase' => 0,
         'resource' => 0,
         'rotating_feature' => 0,
+        'test' => 0,
         'video' => 'video',
         'webform' => 0,
       ),
