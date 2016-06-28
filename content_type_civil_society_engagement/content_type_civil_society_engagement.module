@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Content Type -- Civil Society Engagement feature.
+ */
+
+include_once 'content_type_civil_society_engagement.features.inc';

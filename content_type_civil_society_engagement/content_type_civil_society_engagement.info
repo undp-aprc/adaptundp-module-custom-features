@@ -1,0 +1,15 @@
+name = Content Type -- Civil Society Engagement
+description = Defines the content type for a Civil Society Engagement Story
+core = 7.x
+package = Content Types
+version = 7.x-1.0
+dependencies[] = content_type_project
+dependencies[] = content_types_news
+dependencies[] = features
+dependencies[] = node_reference
+dependencies[] = text
+features[features_api][] = api:2
+features[field_instance][] = node-civil_society_engagement-body
+features[field_instance][] = node-civil_society_engagement-field_project
+features[node][] = civil_society_engagement
+project path = sites/all/modules/custom/features-data

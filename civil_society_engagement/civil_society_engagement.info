@@ -1,0 +1,7 @@
+name = Civil Society Engagement
+description = Defines the Civil Society Engagement Views and Configuration
+core = 7.x
+package = Features
+version = 7.x-1.0
+dependencies[] = content_type_civil_society_engagement
+features[features_api][] = api:2
