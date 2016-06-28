@@ -41,6 +41,12 @@ function civil_society_engagement_views_default_views() {
   $handler->display->display_options['style_options']['zoom']['initialZoom'] = '-1';
   $handler->display->display_options['style_options']['zoom']['minZoom'] = '4';
   $handler->display->display_options['style_options']['zoom']['maxZoom'] = '12';
+  $handler->display->display_options['style_options']['icon']['iconType'] = 'html';
+  $handler->display->display_options['style_options']['icon']['iconSize']['x'] = '70';
+  $handler->display->display_options['style_options']['icon']['iconSize']['y'] = '70';
+  $handler->display->display_options['style_options']['icon']['html'] = 'field_display_photo';
+  $handler->display->display_options['style_options']['icon']['iconImageStyle'] = '1-1_small_scaled_cropped_100x100';
+  $handler->display->display_options['style_options']['icon']['htmlClass'] = 'map-marker-round';
   $handler->display->display_options['style_options']['vector_display']['stroke'] = 0;
   $handler->display->display_options['style_options']['vector_display']['fill'] = 0;
   $handler->display->display_options['style_options']['vector_display']['clickable'] = 0;
@@ -73,7 +79,7 @@ function civil_society_engagement_views_default_views() {
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  /* Field: Content: Masthead Photo */
+  /* Field: Content: Display Photo */
   $handler->display->display_options['fields']['field_display_photo']['id'] = 'field_display_photo';
   $handler->display->display_options['fields']['field_display_photo']['table'] = 'field_data_field_display_photo';
   $handler->display->display_options['fields']['field_display_photo']['field'] = 'field_display_photo';
@@ -82,7 +88,7 @@ function civil_society_engagement_views_default_views() {
   $handler->display->display_options['fields']['field_display_photo']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_display_photo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_display_photo']['settings'] = array(
-    'image_style' => 'thumbnail',
+    'image_style' => '1-1_small_scaled_cropped_100x100',
     'image_link' => '',
   );
   /* Field: Field: Coordinates */
@@ -117,8 +123,19 @@ function civil_society_engagement_views_default_views() {
   );
 
   /* Display: Civil Society Engagement Map */
-  $handler = $view->new_display('page', 'Civil Society Engagement Map', 'page_1');
-  $handler->display->display_options['path'] = 'civil-society-engagement-map';
+  $handler = $view->new_display('panel_pane', 'Civil Society Engagement Map', 'panel_pane_1');
+  $handler->display->display_options['display_description'] = 'Creates a Content Pane that displays a map of UNDP\'s work with civil society';
+  $handler->display->display_options['pane_category']['name'] = 'Civil Society Engagement';
+  $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['allow']['use_pager'] = 0;
+  $handler->display->display_options['allow']['items_per_page'] = 0;
+  $handler->display->display_options['allow']['offset'] = 0;
+  $handler->display->display_options['allow']['link_to_view'] = 0;
+  $handler->display->display_options['allow']['more_link'] = 0;
+  $handler->display->display_options['allow']['path_override'] = 0;
+  $handler->display->display_options['allow']['title_override'] = 'title_override';
+  $handler->display->display_options['allow']['exposed_form'] = 0;
+  $handler->display->display_options['allow']['fields_override'] = 0;
   $translatables['civil_society_engagement'] = array(
     t('Master'),
     t('How UNDP engages with Civil Society'),
@@ -131,6 +148,8 @@ function civil_society_engagement_views_default_views() {
     t('Related Project'),
     t('Country'),
     t('Civil Society Engagement Map'),
+    t('Creates a Content Pane that displays a map of UNDP\'s work with civil society'),
+    t('Civil Society Engagement'),
   );
   $export['civil_society_engagement'] = $view;
 
